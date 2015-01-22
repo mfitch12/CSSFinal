@@ -1,0 +1,165 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background-color: #F2E2CE;
+  font-family: 'PT Sans Narrow', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 360px;
+  text-align: center;
+  margin: 0 auto;
+}
+nav ul {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+nav ul li {
+  -webkit-flex: 1 0;
+  flex: 1 0;
+  background-color: #023059;
+}
+nav ul li a {
+  display: block;
+  margin: 20px 0;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  margin-top: 4em;
+}
+
+.flex {
+  -webkit-flex: 1 0;
+  flex: 1 0;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.box-shadow {
+  -moz-box-shadow: #8C0303 10px 10px 30px;
+  -webkit-box-shadow: #8C0303 10px 10px 30px;
+  box-shadow: #8C0303 10px 10px 30px;
+}
+.box-shadow:hover {
+  -moz-box-shadow: green 10px 10px 30px;
+  -webkit-box-shadow: green 10px 10px 30px;
+  box-shadow: green 10px 10px 30px;
+}
+
+.opacity {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+.opacity:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+.rounded-corners {
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+.rounded-corners:hover {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.current {
+  background-color: #03A6A6;
+}
+
+.transition:hover {
+  -moz-transition-property: font-size;
+  -o-transition-property: font-size;
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  font-size: 2em;
+}
+
+header {
+  margin: 2em;
+  text-align: center;
+}
+
+h1 {
+  color: #8C0303;
+  font-size: 2em;
+}
+
+h2 {
+  color: #8C0303;
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=application.css.map */

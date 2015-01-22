@@ -1,0 +1,84 @@
+
+body{
+	background-color: $color4;
+	font-family: 'PT Sans Narrow', sans-serif;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+nav{
+	width: $navWidth;
+	text-align: center;
+	margin: 0 auto;
+	ul{
+		@include flex-direction(column);
+		li{
+			@include flex(1 0);
+			background-color: $color1;
+			a{
+				display: block;
+				margin: $buttonMargin 0;
+				padding: $buttonPadding 0;
+				text-align: center;
+				color: white;
+				font-size: 1.5em;
+				text-decoration: none;
+			}
+
+		}
+	}
+}
+section{
+	@include display-flex;
+	text-align: center;
+	margin-top: 4em;
+}
+.flex{
+	@include flex(1 0);
+	@include flex-wrap(wrap);
+}
+
+.box-shadow{
+	@include box-shadow($color5 10px 10px 30px);
+	&:hover{
+		@include box-shadow(green 10px 10px 30px);
+	}
+}
+
+.opacity{
+	@include opacity(0.5);
+	&:hover{
+		@include opaque;
+	}
+}
+
+.rounded-corners{
+	@include border-radius(25px);
+	&:hover{
+		@include border-radius(0px);
+	}
+}
+.current{
+	background-color: $color3;
+}
+
+.transition{
+	&:hover{
+		@include transition-property(font-size);
+		@include transition-duration(1s);
+		font-size: 2em;
+	}
+}
+
+header{
+	margin: 2em;
+	text-align: center;
+}
+h1{
+	color: $color5;
+	font-size: 2em;
+}
+h2{
+	color: $color5;
+	font-size: 1.5em;
+}
+
